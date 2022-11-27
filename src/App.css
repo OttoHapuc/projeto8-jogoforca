@@ -74,6 +74,9 @@
   height: 65vh;
   padding: 59px 0 30px 39px;
 }
+.imagemJogo img{
+  height:100%;
+}
 
 .botaoEFrase {
   width: 55%;
@@ -119,13 +122,13 @@
 }
 
 .aquiTemLetra {
-  max-width: 650px;
-  margin-bottom: 56px;
+  max-width: 680px;
+  margin-bottom: 50px;
 }
-.delsigado{
+.ligado{
   background-color: #E1ECF4;
 }
-.legado{
+.desligado{
   background-color: #9FAAB5;
 }
 /* ===============================*/
