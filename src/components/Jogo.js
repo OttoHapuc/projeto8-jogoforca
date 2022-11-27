@@ -7,6 +7,11 @@ export default function ImagemJogo(prop) {
         let aqui = palavras[Math.floor(Math.random() * palavras.length)]
         prop.setPalavra(aqui)
         prop.setPalavraEs(aqui.split(""))
+        let nada = []
+        for(let i=0; i<aqui.length; i++) {
+            nada.push("_")
+        }
+        prop.setAvancoPalavra(nada)
     }
     if (prop.iniciaJo === true) {
         return (
@@ -22,7 +27,9 @@ export default function ImagemJogo(prop) {
             </>
         )
     }
+    
     else {
+        let con = 0
         return (
             <>
                 <section className="imagemJogo">
@@ -32,7 +39,7 @@ export default function ImagemJogo(prop) {
                     <button onClick={() => iniciarJogo()} type="button">Escolher Palavra</button>
                     <div className="flex">
                         {prop.avancoPalavra.map((p) => <PalavraAAcertar 
-                            key={p} 
+                            key={p+con++} 
                             avancoPalavra={p}
                             />)}
                     </div>

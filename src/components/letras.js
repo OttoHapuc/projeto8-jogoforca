@@ -1,6 +1,6 @@
 import ApresentaLetra from "./ApresentaLeta"
 export default function Letras(prop) {
-  console.log(prop.palavraEs)
+  console.log()
   
   return (
     <div className="aquiTemLetra flex flex-wrap">
@@ -10,7 +10,9 @@ export default function Letras(prop) {
         listaAB={l}
         palavrasEs={prop.palavraEs}
         avancoPalavra={prop.avancoPalavra}
-        teste={prop.teste}
+        setAvancoPalavra={prop.setAvancoPalavra}
+        contador={prop.contador}
+        aplicaContagem={prop.aplicaContagem}
       />)}
     </div>
   )

@@ -1,16 +1,24 @@
 export default function ApresentaLetra(prop) {
 
-    
     function clicado(p) {
-        
-        for (let i = 0; i < prop.palavrasEs.length; i++) {
-            if(p == prop.palavrasEs[i]){
-                prop.teste.push(prop.palavrasEs[i])
+        console.log(prop.palavrasEs)
+        let nada = []
+        let aa = prop.contador +1
+        for (let i = 0; i<prop.avancoPalavra.length; i++) {
+            if (p == prop.palavrasEs[i]){
+                nada.push(prop.palavrasEs[i])
+            }
+            else if(prop.avancoPalavra[i] != "_"){
+                nada.push(prop.avancoPalavra[i])
             }
             else{
-                prop.teste.push("_")
+                nada.push("_")
+                prop.aplicaContagem(aa)
             }
         }
+        prop.setAvancoPalavra(nada)
+        nada = []
+        console.log(prop.avancoPalavra)
     }
     if (prop.iniciaJo === true) {
         return (
