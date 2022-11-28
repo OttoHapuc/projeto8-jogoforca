@@ -27,6 +27,8 @@ function App() {
   const [palavraPerdeu, setPalavraPerdeu] = useState(true)
   const [palavraGanhou, setPalavraganhou] = useState(false)
 
+  const [chutee, setChutee] = useState("")
+
 
   return (
     <div>
@@ -64,7 +66,18 @@ function App() {
           palavraGanhou={palavraGanhou}
           setPalavraGanhou={setPalavraganhou}
           />
-        <Chute iniciaJo={iniciaJo} />
+        <Chute 
+        iniciaJo={iniciaJo} 
+        chutee={chutee} 
+        setChutee={setChutee}
+        avancoPalavra={avancoPalavra}
+        setAvancoPalavra={setAvancoPalavra}
+        palavraEs={palavraEs}
+        setPalavraPerdeu={setPalavraPerdeu}
+        setPalavraganhou={setPalavraganhou}
+        setJogo={setJogo}
+        setContador={setContador}
+        />
       </section>
     </div>
   );
