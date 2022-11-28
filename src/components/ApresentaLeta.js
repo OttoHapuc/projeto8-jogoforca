@@ -46,8 +46,12 @@ export default function ApresentaLetra(prop) {
 
 
     }
-
-    if (prop.iniciaJo) {
+    if (prop.palavraGanhou) {
+        return (
+            <span data-test="letter" className="letra flex aling-c just-c desligado">{prop.listaAB}</span>
+        )
+    }
+    else if (prop.iniciaJo) {
         return (
             <span data-test="letter" className="letra flex aling-c just-c desligado">{prop.listaAB}</span>
         )

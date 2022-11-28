@@ -113,7 +113,9 @@
 .fraseASeAdivinhar.perdeu {
   color: red;
 }
-
+.fraseASeAdivinhar.ganhou{
+  color: green;
+}
 /*===============================*/
 
 .letra {

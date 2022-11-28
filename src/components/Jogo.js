@@ -5,10 +5,11 @@ export default function ImagemJogo(prop) {
     function iniciarJogo() {
         prop.setContador(0)
         prop.setPalavraPerdeu(true)
-        prop.setJogo(!(prop.iniciaJo))
+        prop.setJogo(false)
         let aqui = palavras[Math.floor(Math.random() * palavras.length)]
         prop.setPalavra(aqui)
         prop.setPalavraEs(aqui.split(""))
+        prop.setPalavraganhou(false)
         
         let nada = []
         for (let i = 0; i < aqui.length; i++) {
@@ -31,6 +32,7 @@ export default function ImagemJogo(prop) {
                         avancoPalavra={p}
                         palavraPerdeu={prop.palavraPerdeu}
                         palavraEs={prop.palavraEs[p]}
+                        palavraGanhou={prop.palavraGanhou}
                     />)}
                 </div>
             </section>

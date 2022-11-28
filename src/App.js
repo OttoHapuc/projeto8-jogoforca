@@ -46,7 +46,8 @@ function App() {
           setAvancoPalavra={setAvancoPalavra}
           palavraPerdeu={palavraPerdeu}
           setPalavraPerdeu={setPalavraPerdeu}
-
+          palavraGanhou={palavraGanhou}
+          setPalavraganhou={setPalavraganhou}
         />
       </div>
       <section className="letraEinput flex flex-column aling-c">
