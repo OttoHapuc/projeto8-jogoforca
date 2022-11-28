@@ -16,7 +16,7 @@ export default function Chute(prop) {
         }
         if(errado ==0){
             prop.setPalavraganhou(true)
-            
+            prop.setJogo(true)
         }
         else{
             prop.setPalavraPerdeu(false)

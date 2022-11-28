@@ -68,6 +68,7 @@ function App() {
           />
         <Chute 
         iniciaJo={iniciaJo} 
+        setJogo={setJogo}
         chutee={chutee} 
         setChutee={setChutee}
         avancoPalavra={avancoPalavra}
