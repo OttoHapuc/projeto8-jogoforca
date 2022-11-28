@@ -25,6 +25,8 @@ function App() {
   const [avancoPalavra, setAvancoPalavra] = useState([])
 
   const [palavraPerdeu, setPalavraPerdeu] = useState(true)
+  const [palavraGanhou, setPalavraganhou] = useState(false)
+
 
   return (
     <div>
@@ -58,6 +60,8 @@ function App() {
           contador={contador}
           aplicaContagem={setContador}
           setPalavraPerdeu={setPalavraPerdeu}
+          palavraGanhou={palavraGanhou}
+          setPalavraGanhou={setPalavraganhou}
           />
         <Chute iniciaJo={iniciaJo} />
       </section>

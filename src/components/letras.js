@@ -15,6 +15,8 @@ export default function Letras(prop) {
         contador={prop.contador}
         aplicaContagem={prop.aplicaContagem}
         setPalavraPerdeu={prop.setPalavraPerdeu}
+        palavraGanhou={prop.palavraGanhou}
+        setPalavraGanhou={prop.setPalavraGanhou}
       />)}
     </div>
   )
