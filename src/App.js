@@ -24,6 +24,8 @@ function App() {
 
   const [avancoPalavra, setAvancoPalavra] = useState([])
 
+  const [palavraPerdeu, setPalavraPerdeu] = useState(true)
+
   return (
     <div>
       <div className="imagem-frase flex">
@@ -33,16 +35,21 @@ function App() {
           alfabeto={alfabeto}
           imagens={imagens}
           contador={contador}
+          setContador={setContador}
           setPalavra={setPalavra}
           palavra={palavra}
           setPalavraEs={setPalavraEs}
           palavraEs={palavraEs}
           avancoPalavra={avancoPalavra}
           setAvancoPalavra={setAvancoPalavra}
+          palavraPerdeu={palavraPerdeu}
+          setPalavraPerdeu={setPalavraPerdeu}
+
         />
       </div>
       <section className="letraEinput flex flex-column aling-c">
         <Letras 
+          setJogo={setJogo}
           iniciaJo={iniciaJo} 
           alfabeto={alfabeto} 
           palavraEs={palavraEs}
@@ -50,6 +57,7 @@ function App() {
           setAvancoPalavra={setAvancoPalavra}
           contador={contador}
           aplicaContagem={setContador}
+          setPalavraPerdeu={setPalavraPerdeu}
           />
         <Chute iniciaJo={iniciaJo} />
       </section>

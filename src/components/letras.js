@@ -6,6 +6,7 @@ export default function Letras(prop) {
     <div className="aquiTemLetra flex flex-wrap">
       {prop.alfabeto.map((l) => <ApresentaLetra
         key={l}
+        setJogo={prop.setJogo}
         iniciaJo={prop.iniciaJo}
         listaAB={l}
         palavrasEs={prop.palavraEs}
@@ -13,6 +14,7 @@ export default function Letras(prop) {
         setAvancoPalavra={prop.setAvancoPalavra}
         contador={prop.contador}
         aplicaContagem={prop.aplicaContagem}
+        setPalavraPerdeu={prop.setPalavraPerdeu}
       />)}
     </div>
   )
